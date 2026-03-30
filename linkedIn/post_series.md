@@ -28,7 +28,7 @@ Topics covered:
 ---
 
 ## Day 3 — Full Walkthrough & Actionable Intelligence
-**[View Post →](https://www.linkedin.com/feed/update/urn:li:activity:7435393642074337280)**
+**[View Post →](https://www.linkedin.com/feed/update/urn:li:activity:7436145499012853761)**
 
 Topics covered:
 - Grade B vs Grade E risk comparison
