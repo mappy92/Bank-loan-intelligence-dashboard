@@ -1,4 +1,4 @@
-# 🏦 Bank Loan Intelligence Dashboard
+# Bank Loan Intelligence Dashboard
 ### *Excel-Based Portfolio Risk Analytics | Business Intelligence | Financial Reporting*
 
 ![Excel](https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
@@ -8,23 +8,23 @@
 
 ---
 
-## 📢 LinkedIn Series — *Learning Aloud in Public*
+## LinkedIn Series - *Learning Aloud in Public*
 
 This project was built and shared as a 3-part LinkedIn series. Follow along:
 
 | Post | Title | Link |
 |------|-------|------|
-| 📊 Day 1 | *Data Architecture & KPI Design* | [View Post →](https://www.linkedin.com/feed/update/urn:li:activity:7435393642074337280) |
-| 🎨 Day 2 | *Design Sheet & Overview Dashboard* | [View Post →](https://www.linkedin.com/feed/update/urn:li:activity:7435752272556539904) |
-| 🎬 Day 3 | *Full Walkthrough & Actionable Intelligence* | [View Post →](https://www.linkedin.com/feed/update/urn:li:activity:7435393642074337280) |
+| Day 1 | *Data Architecture & KPI Design* | [View Post →](https://www.linkedin.com/feed/update/urn:li:activity:7435393642074337280) |
+| Day 2 | *Design Sheet & Overview Dashboard* | [View Post →](https://www.linkedin.com/feed/update/urn:li:activity:7435752272556539904) |
+| Day 3 | *Full Walkthrough & Actionable Intelligence* | [View Post →](https://www.linkedin.com/feed/update/urn:li:activity:7436145499012853761) |
 
-> 💾 **Free Resource (PDF):** Full dashboard filter views + Design Sheet architecture + KPI Data Dictionary → [Google Drive](https://drive.google.com/file/d/11A45KCs8jiFdKHtwwTneN7SdTmN66VZM/view?usp=sharing)
+> **Free Resource (PDF):** Full dashboard filter views + Design Sheet architecture + KPI Data Dictionary → [Google Drive](https://drive.google.com/file/d/11A45KCs8jiFdKHtwwTneN7SdTmN66VZM/view?usp=sharing)
 
 ---
 
-## 1. 🎯 Audience-Friendly Description
+## 1. Audience-Friendly Description
 
-This project transforms a raw, 38,600-row loan portfolio dataset into a fully interactive, business-ready intelligence dashboard — **built entirely in Microsoft Excel**.
+This project transforms a raw, 38,600-row loan portfolio dataset into a fully interactive, business-ready intelligence dashboard - **built entirely in Microsoft Excel**.
 
 No Power BI licence. No SQL server. No Python environment to configure. Just Excel and a rigorous analytical framework that mirrors how risk teams in real financial institutions monitor loan portfolio health.
 
@@ -32,25 +32,25 @@ If you are a **Data Analyst, BI Developer, or Data Scientist** building a portfo
 
 ---
 
-## 2. 💼 Business Impact
+## 2. Business Impact
 
 | Impact Area | Result |
 |-------------|--------|
 | **Portfolio Health Visibility** | Instant view of Good Loan rate (86.18%) vs Bad Loan rate (13.82%) across 38.6K applications |
-| **Risk Segmentation** | Grade E loans carry a 31.31% default rate — validated against a 21.40% interest premium |
-| **Funding Gap Analysis** | $435.8M funded vs $473.1M received — profitability spread surfaced at a glance |
+| **Risk Segmentation** | Grade E loans carry a 31.31% default rate - validated against a 21.40% interest premium |
+| **Funding Gap Analysis** | $435.8M funded vs $473.1M received - profitability spread surfaced at a glance |
 | **Stakeholder-Ready Reporting** | Interactive slicers eliminate ad-hoc SQL queries for common business questions |
 | **Month-Over-Month Tracking** | MoM + MTD calculations embedded, supporting rolling performance reviews |
 
 **Who benefits from this analysis:**
-- **Credit Risk Officers** — monitor default rates and early warning signals
-- **Portfolio Managers** — track funded vs received amounts by segment
-- **Product Teams** — identify high-performing loan purposes (Wedding: 90.73% good rate)
-- **Executive Reporting** — single-pane KPI summary for board-level presentation
+- **Credit Risk Officers** - monitor default rates and early warning signals
+- **Portfolio Managers** - track funded vs received amounts by segment
+- **Product Teams** - identify high-performing loan purposes (Wedding: 90.73% good rate)
+- **Executive Reporting** - single-pane KPI summary for board-level presentation
 
 ---
 
-## 3. 📋 Project Description
+## 3. Project Description
 
 ### Background
 Banks and lending institutions manage thousands of loan applications across multiple risk grades, purposes, and geographies. Without a structured reporting layer, identifying portfolio stress points (e.g., rising Charged Off rates in Grade E) requires significant manual querying effort.
@@ -58,14 +58,14 @@ Banks and lending institutions manage thousands of loan applications across mult
 ### What Was Built
 A two-dashboard Excel workbook connected to a raw 24-column dataset, featuring:
 
-**Summary Dashboard** — KPI tiles for total applications, funded amount, amount received, avg interest rate, and avg DTI. Good Loan vs Bad Loan donut charts. Loan status breakdown by application count, funded amount, amount received, interest rate, and DTI.
+**Summary Dashboard** - KPI tiles for total applications, funded amount, amount received, avg interest rate, and avg DTI. Good Loan vs Bad Loan donut charts. Loan status breakdown by application count, funded amount, amount received, interest rate, and DTI.
 
-**Overview Dashboard** — Monthly trend line, US state choropleth map, loan term donut (36 vs 60 months), employment length distribution, loan purpose horizontal bar chart, and home ownership treemap.
+**Overview Dashboard** - Monthly trend line, US state choropleth map, loan term donut (36 vs 60 months), employment length distribution, loan purpose horizontal bar chart, and home ownership treemap.
 
-**Interactive Filtering** — All visuals are connected to Grade (A–G) and Purpose (car, credit card, debt consolidation, educational, home improvement, house, medical, moving, other, renewable energy, small business, vacation, wedding) slicers.
+**Interactive Filtering** - All visuals are connected to Grade (A–G) and Purpose (car, credit card, debt consolidation, educational, home improvement, house, medical, moving, other, renewable energy, small business, vacation, wedding) slicers.
 
 ### Key Technical Decisions
-- MoM formula: `(MTD − PMTD) / PMTD` — implemented via pivot table time intelligence
+- MoM formula: `(MTD − PMTD) / PMTD` - implemented via pivot table time intelligence
 - Good/Bad Loan classification: `IF loan_status = "Fully Paid" OR "Current" → "Good Loan"` | `"Charged Off" → "Bad Loan"`
 - Design Sheet architecture: All pivot tables and source charts are isolated in a hidden Design Sheet, keeping dashboard views clean
 - State map using Excel's built-in Bing Maps integration with raw state abbreviation data
@@ -78,7 +78,7 @@ A two-dashboard Excel workbook connected to a raw 24-column dataset, featuring:
 
 ---
 
-## 4. 📁 Folder Structure
+## 4. Folder Structure
 
 ```
 bank-loan-intelligence-dashboard/
@@ -110,7 +110,7 @@ bank-loan-intelligence-dashboard/
 │       └── Design_Sheet_4_Term_Purpose_Ownership.png
 │
 ├── data/
-│   └── DATA_SOURCE.md                 ← Notes on dataset origin & schema (no raw data uploaded)
+│   └── DATA_SOURCE.md                 ← Notes on dataset
 │
 ├── assets/
 │   └── flow_diagram.png               ← End-to-end project architecture diagram
@@ -121,20 +121,20 @@ bank-loan-intelligence-dashboard/
 
 ---
 
-## 5. 🔄 Flow Diagram
+## 5. Flow Diagram
 
 ```
 RAW DATA (38,600 rows × 24 cols)
          │
          ▼
-[Data Sheet — Excel Workbook]
+[Data Sheet - Excel Workbook]
   • Loan ID, Member ID, State, Grade, Sub-Grade
   • Loan Amount, Interest Rate, DTI
   • Loan Status → Good/Bad Loan (derived column)
   • Issue Date → MTD / PMTD grouping
          │
          ▼
-[Design Sheet — Hidden Pivot Layer]
+[Design Sheet - Hidden Pivot Layer]
   • Overall Measures Pivot (Total, MTD, PMTD, MoM)
   • Loan Status Pivot (Fully Paid / Charged Off / Current)
   • Good vs Bad Loan Pivot + Donut Charts
@@ -164,11 +164,11 @@ RAW DATA (38,600 rows × 24 cols)
 
 ---
 
-## 6. 🎬 Demo Video
+## 6. Demo Video
 
-> *Dashboard walkthrough video — see LinkedIn Day 3 post for the full end-to-end video.*
+> *Dashboard walkthrough video - see LinkedIn Day 3 post for the full end-to-end video.*
 
-**[▶ Watch the Full Walkthrough on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7435393642074337280)**
+**[▶ Watch the Full Walkthrough on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7436145499012853761)**
 
 Covers:
 - Grade B vs Grade E risk comparison (88.50% vs 68.69% Good Loan rate)
@@ -179,7 +179,7 @@ Covers:
 
 ---
 
-## 7. 📊 Output — Key Dashboard Findings
+## 7. Output - Key Dashboard Findings
 
 ### Summary Dashboard (All Grades)
 | KPI | Value |
@@ -200,8 +200,8 @@ Covers:
 | Wedding | 90.73% | 9.27% | 11.89% |
 | Medical | 85.01% | 14.99% | 11.57% |
 | Educational | 84.13% | 15.87% | 11.65% |
-| House | 0.4K apps | — | 12.38% |
-| Home Improvement | 2.9K apps | — | 11.40% |
+| House | 0.4K apps | - | 12.38% |
+| Home Improvement | 2.9K apps | - | 11.40% |
 
 ### Loan Status Breakdown
 | Status | Count | Funded | Received | Avg Rate | Avg DTI |
@@ -212,7 +212,7 @@ Covers:
 
 ---
 
-## 8. ⚙️ How to Run & Dependencies
+## 8. How to Run & Dependencies
 
 ### Requirements
 | Tool | Version | Purpose |
@@ -223,7 +223,7 @@ Covers:
 ### Steps to Open
 ```
 1. Download the .xlsx file from the /dashboard/ folder (or Releases)
-2. Open in Microsoft Excel — Enable Content if prompted
+2. Open in Microsoft Excel - Enable Content if prompted
 3. Navigate to the "Summary Dashboard" tab
 4. Use the Grade and Purpose slicers on the left panel to filter all visuals
 5. Click "Overview Dashboard" tab for geographic and trend views
@@ -233,11 +233,11 @@ Covers:
 The **Design Sheet** tab contains all source pivot tables. It is intentionally left visible so you can inspect the data architecture. In a production environment, this sheet would typically be hidden.
 
 ### No Python / No Power BI Required
-This project is intentionally Excel-only to demonstrate that sophisticated portfolio analytics can be delivered without additional tooling — a common constraint in banking environments.
+This project is intentionally Excel-only to demonstrate that sophisticated portfolio analytics can be delivered without additional tooling - a common constraint in banking environments.
 
 ---
 
-## 9. 🤝 Contribution Guidelines
+## 9. Contribution Guidelines
 
 This is a portfolio project, but feedback and suggestions are welcome.
 
@@ -254,14 +254,14 @@ This is a portfolio project, but feedback and suggestions are welcome.
 
 ---
 
-## 10. 📜 License & Credits
+## 10. License & Credits
 
-**License:** MIT License — free to use, adapt, and share with attribution.
+**License:** MIT License - free to use, adapt, and share with attribution.
 
 **Dataset:** This project uses a simulated loan dataset structured after publicly available LendingClub loan data. No real borrower PII is included.
 
 **Author:** Manpreet Singh (Mappy)
-- 🔗 [LinkedIn](https://www.linkedin.com/in/manpreet-singh-mappy)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/manpreet-singh-ds)
 - 💻 [GitHub](https://github.com/mappy92)
 - 📧 Available for data science roles in Ontario banking & financial services
 
@@ -273,18 +273,18 @@ This is a portfolio project, but feedback and suggestions are welcome.
 
 | Priority | Next Step | Why It Matters |
 |----------|-----------|----------------|
-| 🔴 High | **Tableau Port** — Rebuild the Summary & Overview dashboards in Tableau Public | Expands the project's reach and demonstrates cross-tool fluency |
-| 🔴 High | **Python EDA Notebook** — Replicate KPI calculations in pandas + matplotlib | Demonstrates that the Excel logic is reproducible in code |
-| 🟡 Medium | **Predictive Layer** — Add a Logistic Regression model to predict "Good vs Bad Loan" at application time | Connects the reporting layer to an ML layer |
-| 🟡 Medium | **Power BI Version** — Use DAX measures to replicate MoM and MTD logic | Common ask in Canadian bank data roles |
-| 🟢 Low | **OSFI E-23 Alignment Notes** — Annotate KPIs with relevant OSFI guidelines | Demonstrates Canadian regulatory awareness |
-| 🟢 Low | **Automated Refresh** — VBA or Power Query script to refresh pivots on new data load | Production-readiness demonstration |
+| 🔴 High | **Tableau Port** - Rebuild the Summary & Overview dashboards in Tableau Public | Expands the project's reach and demonstrates cross-tool fluency |
+| 🔴 High | **Python EDA Notebook** - Replicate KPI calculations in pandas + matplotlib | Demonstrates that the Excel logic is reproducible in code |
+| 🟡 Medium | **Predictive Layer** - Add a Logistic Regression model to predict "Good vs Bad Loan" at application time | Connects the reporting layer to an ML layer |
+| 🟡 Medium | **Power BI Version** - Use DAX measures to replicate MoM and MTD logic | Common ask in Canadian bank data roles |
+| 🟢 Low | **OSFI E-23 Alignment Notes** - Annotate KPIs with relevant OSFI guidelines | Demonstrates Canadian regulatory awareness |
+| 🟢 Low | **Automated Refresh** - VBA or Power Query script to refresh pivots on new data load | Production-readiness demonstration |
 
 ---
 
 <div align="center">
 
-**⭐ If this project helped you, please give it a star — it helps others find it too.**
+**⭐ If this project helped you, please give it a star - it helps others find it too.**
 
 *Built as part of a public #LearningAloud series | London, Ontario, Canada*
 
