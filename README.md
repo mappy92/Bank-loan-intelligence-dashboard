@@ -269,7 +269,7 @@ This is a portfolio project, but feedback and suggestions are welcome.
 
 ---
 
-## 11. 🚀 Next Steps
+## 11. Next Steps
 
 | Priority | Next Step | Why It Matters |
 |----------|-----------|----------------|
